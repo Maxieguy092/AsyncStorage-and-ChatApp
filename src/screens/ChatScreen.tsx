@@ -24,12 +24,12 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../../App";
 
 import { load, remove, save } from "../storage/storage"; 
-import { launchImageLibrary } from "react-native-image-picker";   // 👈 ADD THIS
+import { launchImageLibrary } from "react-native-image-picker";   
 
 type MessageType = {
   id: string;
   text?: string;
-  image?: string;       // 👈 IMAGE FIELD
+  image?: string;     
   user: string;
   createdAt: { seconds: number; nanoseconds: number } | null;
 };
@@ -54,7 +54,7 @@ export default function ChatScreen({ route }: Props) {
 
         const localMsg: MessageType = {
           id: Date.now().toString(),
-          image: uri,                 // 👈 SAVE LOCAL FILE URI
+          image: uri,             
           user: name,
           createdAt: {
             seconds: Date.now() / 1000,
@@ -68,7 +68,7 @@ export default function ChatScreen({ route }: Props) {
 
         if (isOnline) {
           await addDoc(messagesCollection, {
-            image: uri,              // 👈 store URI in Firestore too
+            image: uri,           
             user: name,
             createdAt: serverTimestamp(),
           });
@@ -76,8 +76,6 @@ export default function ChatScreen({ route }: Props) {
       }
     );
   };
-
-  // ----------------------------------
 
   useEffect(() => {
     const unsub = NetInfo.addEventListener((state) => {
