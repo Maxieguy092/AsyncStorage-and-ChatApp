@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "21069408582",
+    "project_id": "fir-pbp-37e6c",
+    "storage_bucket": "fir-pbp-37e6c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21069408582:android:6b0b39b68b6c075440dd47",
+        "android_client_info": {
+          "package_name": "com.firebasepbp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJluZu8TDhPUpkxxDAVO1blmLBo1lDCIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21069408582:android:f1a04e5539ec734540dd47",
+        "android_client_info": {
+          "package_name": "com.pbpfirebasetwo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJluZu8TDhPUpkxxDAVO1blmLBo1lDCIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
